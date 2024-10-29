@@ -61,7 +61,10 @@ class AlembicCameraLoader(load.LoaderPlugin):
 
             try:
                 camera_node = nuke.createNode(
-                    "Camera3",
+                    # 1 start mnm
+                    "Camera2",
+                    # 1 end mnm
+                    # "Camera3",
                     "name {} file {} read_from_file True".format(
                         object_name, file),
                     inpanel=False
